@@ -5,6 +5,10 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
+       /**
+        * add in all nessesary imports
+        */
+
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
@@ -33,6 +37,12 @@ public class Robot extends TimedRobot {
    * This function is run when the robot is first started up and should be
    * used for any initialization code.
    */
+
+          /**
+            * If time, look up and add in things that the robot whould need to anitiate 
+            * such as a air pressurizer thing
+            */
+
   @Override
   public void robotInit() {
     m_oi = new OI();
@@ -78,6 +88,12 @@ public class Robot extends TimedRobot {
    * chooser code above (like the commented example) or additional comparisons
    * to the switch structure below with additional strings & commands.
    */
+  
+           /**
+            * As we dont have anything about the autonomous goals or what can be acheieved
+            * during autonomous i am not going to worry about commpleting an autonomos program
+            */
+            
   @Override
   public void autonomousInit() {
     m_autonomousCommand = m_chooser.getSelected();
@@ -117,6 +133,11 @@ public class Robot extends TimedRobot {
   /**
    * This function is called periodically during operator control.
    */
+
+          /**
+            * majority of work will go here. Add in all the controls and intigrate the commands
+            */
+
   @Override
   public void teleopPeriodic() {
     Scheduler.getInstance().run();
