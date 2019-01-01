@@ -9,12 +9,15 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
+        /**
+         * import the Pneumatic cylinders
+         */
 
 /**
  * An example command.  You can replace me with your own command.
  */
-public class ExampleCommand extends Command {
-  public ExampleCommand() {
+public class CloseIntake extends Command {
+  public CloseIntake() {
     // Use requires() here to declare subsystem dependencies
     requires(Robot.m_subsystem);
   }
@@ -27,6 +30,9 @@ public class ExampleCommand extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
+          /**
+           * tell the cylinders to retract to close the Intake
+           */
   }
 
   // Make this return true when this Command no longer needs to run execute()
