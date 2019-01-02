@@ -9,16 +9,14 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
-      /**
-       * import the Pneumatic cylinders
-       */
+import edu.wpi.first.wpilibj.DoubleSolenoid;
 /**
  * An example command.  You can replace me with your own command.
  */
 public class OpenIntake extends Command {
   public OpenIntake() {
     // Use requires() here to declare subsystem dependencies
-    requires(Robot.m_subsystem);
+    requires(Robot.IntakeSubsystem);
   }
 
   // Called just before this Command runs the first time
@@ -31,7 +29,10 @@ public class OpenIntake extends Command {
   protected void execute() {
           /**
            * tell the cylinder to extend to open the Intake 
-          */
+           * do something with (DoubleSolenoid.Value.kForward)
+           * 2018 robot code had something like this 
+           * if (open) {robot.intakeOpener.set(DoubleSolenoid.Value.kForward);}
+           */
   }
 
   // Make this return true when this Command no longer needs to run execute()

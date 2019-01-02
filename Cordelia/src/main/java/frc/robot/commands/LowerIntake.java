@@ -9,9 +9,7 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
-        /**
-        * need to Import the Pneumatic cylinder?
-        */
+import edu.wpi.first.wpilibj.DoubleSolenoid;
 
 /**
  * An example command.  You can replace me with your own command.
@@ -19,7 +17,7 @@ import frc.robot.Robot;
 public class LowerIntake extends Command {
   public LowerIntake() {
     // Use requires() here to declare subsystem dependencies
-    requires(Robot.m_subsystem);
+    requires(Robot.IntakeSubsystem);
   }
 
   // Called just before this Command runs the first time
@@ -32,6 +30,9 @@ public class LowerIntake extends Command {
   protected void execute() {
             /**
             * add so code here that tells the cylinder to extend to lower the Intake
+            * do something with (DoubleSolenoid.Value.kForward)
+            * 2018 robot code had something like this 
+            * if (open) {robot.intakeOpener.set(DoubleSolenoid.Value.kForward);}
             */
   }
 
